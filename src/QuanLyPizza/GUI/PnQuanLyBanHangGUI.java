@@ -1040,8 +1040,10 @@ public class PnQuanLyBanHangGUI extends JPanel {
             if (maTbl == key) {
                 int soLuongAdd = Integer.parseInt(tblGioHang.getValueAt(i, 2) + "");
                 soLuongAdd += soLuong;
-                donGia = donGia.replace(",", "");
-                double donGiaSP = Double.parseDouble(donGia);
+                donGia = donGia.replace(",", "");                
+                donGia = donGia.replace(".", "");
+
+                int donGiaSP = Integer.parseInt(donGia);
 
                 tblGioHang.setValueAt(soLuongAdd, i, 2);
                 tblGioHang.setValueAt(dcf.format(soLuong * donGiaSP), i, 4);
@@ -1059,8 +1061,10 @@ public class PnQuanLyBanHangGUI extends JPanel {
         vec.add(ten);
         vec.add(soLuong);
         vec.add(donGia);
-        donGia = donGia.replace(",", "");
-        double donGiaSP = Double.parseDouble(donGia);
+        donGia = donGia.replace(",", "");        
+        donGia = donGia.replace(".", "");
+
+        int donGiaSP = Integer.parseInt(donGia);
         vec.add(dcf.format(soLuong * donGiaSP));
         // cập nhật lại số lượng trong db
         spBUS.capNhatSoLuongSP(key, -soLuong);
@@ -1101,7 +1105,7 @@ public class PnQuanLyBanHangGUI extends JPanel {
             vec.add(tblGioHang.getValueAt(i, 2));
             vec.add(tblGioHang.getValueAt(i, 3));
             vec.add(tblGioHang.getValueAt(i, 4));
-            tongTien += Integer.parseInt((tblGioHang.getValueAt(i, 4) + "").replace(",", ""));
+            tongTien += Integer.parseInt((tblGioHang.getValueAt(i, 4) + "").replace(".", ""));
             dsGioHang.add(vec);
         }
 

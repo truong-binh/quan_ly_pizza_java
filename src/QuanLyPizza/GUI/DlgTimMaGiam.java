@@ -144,6 +144,7 @@ public class DlgTimMaGiam extends JDialog {
                 String dieuKienst = tblMaGiam.getValueAt(row, 3) + "";
                 dieuKienst = dieuKienst.replace(">", "");
                 dieuKienst = dieuKienst.replace(",", "");
+                dieuKienst = dieuKienst.replace(".", "");
                 int dieuKien = Integer.parseInt(dieuKienst);
 
                 if(dieuKien > tongTien) {

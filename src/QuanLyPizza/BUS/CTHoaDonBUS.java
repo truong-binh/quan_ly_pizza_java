@@ -40,15 +40,18 @@ public class CTHoaDonBUS {
         int ma = hdBUS.getMaHoaDonMoiNhat();
 
         donGia = donGia.replace(",","");
-        thanhTien = thanhTien.replace(",", "");
+        donGia = donGia.replace(".","");
+        thanhTien = thanhTien.replace(",", "");        
+        thanhTien = thanhTien.replace(".", "");
+
 
         CTHoaDon cthd = new CTHoaDon();
 
         cthd.setMaHD(ma);
         cthd.setMaSP(Integer.parseInt(maSP));
-        cthd.setDonGia((int) Double.parseDouble(donGia));
+        cthd.setDonGia (Integer.parseInt(donGia));
         cthd.setSoLuong(Integer.parseInt(soLuong));
-        cthd.setThanhTien((int) Double.parseDouble(thanhTien));
+        cthd.setThanhTien(Integer.parseInt(thanhTien));
 
         ctHDDAO.addCTHoaDon(cthd);
     }
