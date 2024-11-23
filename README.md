@@ -2,9 +2,9 @@
 ## Thành viên nhóm 2:
 |STT  |MSSV        |Họ và tên       |
 |:---:|:----------:|----------------|
-|1    |3119410300  |[Sau Đại Phát](https://www.facebook.com/profile.php?id=100041069225312)|
-|2    |3119410493  |[Trần Quang Vinh](https://www.facebook.com/quangvinh.tran.188478)|
-|3    |3119410204  |[Trần Hữu Khương](https://www.facebook.com/JB.TranHuuKhuong/)|
+|1    |B23DCCC019  |[Trương Ái Bình](https://www.facebook.com/profile.php?id=100025055870702&locale=vi_VN)|
+|2    |B23DCCC027  |[Phạm Nguyễn Cường](https://www.facebook.com/cuong.phamnguyen.9003?locale=vi_VN)|
+|3    |B23DCCC175  |[Nguyễn Đức ](https://www.facebook.com/profile.php?id=100075546750772&locale=vi_VN)|
 ### Hướng dẫn:
 1) Tạo database "quanlypizza" và import ./database/quanlypizza.sql vào MySQL.
 2) Import các thư viện liên quan trong thư mục /libs/
